@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOKEPON!.</title>
+    <script src="assets/js/app.js"></script>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <section id="seleccionar-mascosta">
+        <h1 class="titulo">Mokepon</h1>
+        <h2 class="subtitulo">Elige tú Mokepon:</h2>
+
+        <div class="tarjetas">
+            <input type="radio" name="mascota" id="hipodoge">
+            <label class="tarjeta-de-mokepon" for="hipodoge">
+                <p><strong>Hipodogue</strong></p>
+                <img src="./assets/png/mokepons_mokepon_hipodoge_attack.png" alt="Hipodogue">
+            </label>
+
+            <input type="radio" name="mascota" id="capipepo">
+            <label class="tarjeta-de-mokepon" for="capipepo">
+                <p><strong>Capipepo</strong></p>
+                <img src="./assets/png/mokepons_mokepon_capipepo_attack.png" alt="Capipepo">
+            </label>
+
+            <input type="radio" name="mascota" id="ratigueya">
+            <label class="tarjeta-de-mokepon" for="ratigueya">
+                <p><strong>Ratigueya</strong></p>
+                <img src="./assets/png/mokepons_mokepon_ratigueya_attack.png" alt="Ratigueya">
+            </label>
+        </div>
+
+        <button id="boton-mascota">Seleccionar</button>
+
+    </section>
+
+    <!-- Seccion 2 -->
+    <section id="seleccionar-ataque">
+        <h1 class="titulo">💣Lucha Mokepon💣</h1>
+        <h2 class="subtitulo">Elige tú ataque:</h2>
+
+        <div>
+            <button id="boton-fuego" class="btnAtaque">Fuego🔥</button>
+            <button id="boton-agua" class="btnAtaque">Agua💧</button>
+            <button id="boton-tierra" class="btnAtaque">Tierra🌱</button>
+        </div>
+
+        <div id="mensajes">
+
+            <p id="mensaje-batalla">Ataca cuando estes listo👌</p>
+
+
+            <section id="reiniciar">
+                <button id="boton-reiniciar">Reiniciar</button>
+            </section>
+        </div>
+
+        <div>
+            <div>
+                <strong>
+                    <p style="color: red;" id="vidas-jugador">3</p>
+                </strong>
+                <p id="mascota-jugador"></p>
+                <div id="ataques-jugador"></div>
+
+                <!-- Esta fue de la primera forma que se hizo usando la etiqueta span -->
+                <!--  <p>Tú Mokepon <span id="mascota-jugador"></span> tiene <strong><span style="color: red;"
+                    id="vidas-jugador">3</span></strong> vidas</p> -->
+            </div>
+
+            <div>
+                <strong>
+                    <p style="color: red;" id="vidas-enemigo">3</p>
+                </strong>
+                <p id="mascota-enemigo"></p>
+                <div id="ataques-enemigo"></div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

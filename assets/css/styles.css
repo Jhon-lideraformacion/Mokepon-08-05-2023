@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@1&family=Libre+Baskerville:wght@700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #EAE509;
+}
+
+#seleccionar-mascosta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    font-family: 'Fredoka One', cursive;
+    color: black;
+    font-size: 60px;
+    margin: 10px;
+}
+
+.subtitulo {
+    color: #2B7A0B;
+    font-size: 24px;            
+}
+
+.tarjetas {
+    display: flex;
+    gap: 10px;
+}
+
+.tarjetas p {
+    margin: 0px;
+}
+
+.tarjeta-de-mokepon {
+    width: 100px;
+    height: 134px;
+    background-color: #7DCE13;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 5px;
+    border: 3px solid #2B7A0B;
+    border-radius: 32px 6px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.tarjeta-de-mokepon:hover {
+    background-color: white;
+}
+
+.tarjeta-de-mokepon img {
+    width: 90px;
+}
+
+#boton-mascota {
+    width: 120px;
+    height: 36px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid #2B7A0B;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+}
+
+#boton-mascota:hover {
+    background-color: white;
+    font-weight: bold;
+}
+
+
+input {
+    display: none;
+}
+
+input:checked+label {
+    background-color: white;
+}
+
+
+
+/* Segunda sección */
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+#boton-fuego {
+    width: 84px;
+    height: 44px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 5px;
+    /* border: 3px solid #FBFF00; */
+    border: none;
+    border-radius: 32px 6px;
+    background-color: darkorange;
+    font-family: 'Poppins', sans-serif;
+}
+
+#boton-agua {
+    width: 84px;
+    height: 44px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 5px;
+    border: none;
+    border-radius: 32px 6px;
+    background-color: aqua;
+    font-family: 'Poppins', sans-serif;
+}
+
+#boton-tierra {
+    width: 84px;
+    height: 44px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 5px;
+    border: none;
+    border-radius: 32px 6px;
+    background-color: darkgoldenrod;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btnAtaque:hover {
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    position: relative;
+}
+
+.btnAtaque:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,
+            red, blue, deeppink, blue,
+            red, blue, deeppink, blue);
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(10px);
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+#mensajes {
+    width: 260px;
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+#boton-reiniciar {
+    font-family: 'Poppins', sans-serif;
+   
+}
